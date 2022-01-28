@@ -75,11 +75,7 @@ sleep 3s
 echo -e "\r\e[0;32m[OK]\e[0m Add IonCube to PHP"
 
 #  Reboot apache2 & Php
-echo -n "[In progress] Reboot apache2 & Php ..."
-test -e '/etc/init.d/php5'
-command service 'php5' 'restart'
+service apache2 restart
 
-test -e '/etc/init.d/apache2'
-command service 'apache2' 'force-reload'
 echo -e "\r\e[0;32m[OK]\e[0m Reboot apache2 & Php"
 echo -e "\\033[1;32m ####  Installation Done  #### \\033[0;39m"
