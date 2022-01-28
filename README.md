@@ -13,7 +13,7 @@ Then run it
 ```
 ## List of things installed by this script
 
--apache2
+- apache2
 - php
 - curl
 - imap
