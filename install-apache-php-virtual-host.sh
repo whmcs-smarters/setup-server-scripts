@@ -23,20 +23,7 @@ sudo apt install php libapache2-mod-php php-mysql -y
 
 sleep 2
 echo " + Installation PHP Modules ....."
-sudo apt-get install php-{bcmath,bz2,intl,gd,mbstring,mysql,zip,fpm} -y
-
-echo "+Installing CuRL...."
-
-apt install php-curl -y
-
-echo "+Installing IMAP ...."
-
-apt install php-imap -y 
-
-echo "+Installing unzip"
-
-apt install unzip -y 
-
+sudo apt-get install php-{bcmath,bz2,intl,gd,mbstring,mysql,zip,fpm,curl,imap,unzip} -y
 
 echo "+Creating directory /var/www/vhosts/${site}/public/.."
 
